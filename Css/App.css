@@ -5,8 +5,7 @@
     src: url(../Fonts/Atmospheric-rg4aL.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*VARIABLES CSS*/
 
@@ -34,7 +33,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 html {
@@ -42,7 +40,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: "Roboto";
 }
 
 
@@ -63,14 +61,14 @@ body {
 }
 
 .icon-text {
-    color: #97999B;
+    color: #97999b;
     margin-right: 30px;
     font-size: 16px;
     margin-left: 10px;
 }
 
 .header-contact-container {
-    background-color: #1A2A36;
+    background-color: #1a2a36;
     justify-content: space-around;
     padding: 8px 2px 2px 2px;
 }
@@ -83,10 +81,10 @@ body {
 }
 
 .scoial-icon::after {
-    content: '';
+    content: "";
     height: 36px;
     width: 2px;
-    background-color: #97999B;
+    background-color: #97999b;
     position: absolute;
     top: 0.1rem;
     margin-left: 3px;
@@ -116,7 +114,7 @@ body {
     content: '';
     height: 85px;
     width: 1px;
-    background-color: #97999B;
+    background-color: #97999b;
     position: absolute;
     margin-left: 3rem;
     top: 0.0001rem;
@@ -159,15 +157,15 @@ body {
 /*SLIDER STYLES*/
 
 .swiper {
-    width: 100vw;
+    max-width: 100vw;
     height: 75vh;
     margin-bottom: 5rem;
+    z-index: 3;
 }
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
 }
 
 .slider-container {
@@ -175,7 +173,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
 }
 
 .slider-1 {
@@ -207,12 +204,16 @@ body {
 }
 
 .slider-container h2 {
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
     font-size: 45px;
 }
 
+.text-slider {
+    padding-top: 8rem;
+}
+
 .slider-container p {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
     font-size: 20px;
     font-weight: 600;
 }
@@ -236,7 +237,7 @@ body {
 }
 
 
-/*FOOTER STYLES*/
+/*Footer*/
 
 footer {
     width: 100%;
