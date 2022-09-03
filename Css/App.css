@@ -1,0 +1,337 @@
+/*FONTS*/
+
+@font-face {
+    font-family: "Astro";
+    src: url(../Fonts/Atmospheric-rg4aL.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*VARIABLES CSS*/
+
+/*Base*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+/*HEADER STYLES*/
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    color: var(--first--color);
+    font-size: 18px;
+}
+
+.margin-icon {
+    margin: 0 10px 0 15px;
+}
+
+.icon-text {
+    color: #97999b;
+    margin-right: 30px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.header-contact-container {
+    background-color: #1a2a36;
+    justify-content: space-around;
+    padding: 8px 2px 2px 2px;
+}
+
+.scoial-icon {
+    margin: 0 4px 0 4px;
+    color: var(--first--color);
+    font-size: 25px;
+    padding-bottom: 2px;
+}
+
+.scoial-icon::after {
+    content: "";
+    height: 36px;
+    width: 2px;
+    background-color: #97999b;
+    position: absolute;
+    top: 0.1rem;
+    margin-left: 3px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-black-100);
+    padding: 13px;
+}
+
+.header-title {
+    color: var(--first--color);
+    font-size: 35px;
+    padding: 5px;
+}
+
+.header-title::after {
+    content: "";
+    height: 76.7px;
+    width: 1px;
+    background-color: #97999b;
+    position: absolute;
+    top: 2.3rem;
+    margin-left: 3rem;
+}
+
+.header-title span {
+    color: var(--first--color);
+}
+
+.nav-container {
+    flex-grow: 0.7;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.link-container li {
+    margin-right: 4rem;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.link-container li a {
+    text-decoration: none;
+    color: var(--text-black-900);
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.link-container li a:hover {
+    color: var(--first--color);
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p {
+    color: #fff;
+    line-height: 25px;
+}
+
+footer h4 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-top {
+    background-color: #a98467;
+    padding: 80px 0;
+}
+
+.segment-one h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #6c584c;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.segment-one h4:hover {
+    transform: scale(1.09);
+    transition: all 1s;
+}
+
+.segment-one p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.segment-two h4 {
+    color: #6c584c;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.segment-three h4 {
+    color: #6c584c;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.segment-three a {
+    padding: 12px;
+    background: #f0ead2;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.segment-three a i {
+    font-size: 25px;
+    color: #000;
+}
+
+.facebook i {
+    color: #fff;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.facebook i:hover {
+    color: #3b5998;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.instagram i {
+    color: #fff;
+    margin-left: 2px;
+    font-size: 30px;
+    border-radius: 45%;
+    transition: all 1s;
+}
+
+.instagram i:hover {
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
+    transform: scale(1.5);
+    transition: all 1s;
+    border-radius: 45%;
+}
+
+.twitter i {
+    color: #fff;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.twitter i:hover {
+    color: #1d9bf0;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.linkedin i {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 2px;
+    transition: all 1s;
+}
+
+.linkedin i:hover {
+    color: #2561a9;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.segment-four h4 {
+    color: #6c584c;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.segment-two h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-three h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-four h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-four p {
+    cursor: pointer;
+}
+
+.footer-bottom-text {
+    background-color: #6c584c;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+/* btn whtsp */
+.whatsapp {
+    height: 50px;
+    width: 50px;
+    background-color: #46df62;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    align-items: center;
+    border: #fff solid 3px;
+    transition: all 1s;
+    overflow: hidden;
+}
+.whatsapp i {
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+}
+.whatsapp:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
