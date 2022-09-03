@@ -1,0 +1,218 @@
+/*FONTS*/
+
+@font-face {
+    font-family: "Astro";
+    src: url(../Fonts/Atmospheric-rg4aL.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*VARIABLES CSS*/
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --first--color: #27a919;
+    --fist--color-dark: #0B6133;
+    --second--color: #0d31a7;
+}
+
+
+/*Base*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+
+/*HEADER STYLES*/
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    color: var(--first--color);
+    font-size: 18px;
+}
+
+.margin-icon {
+    margin: 0 10px 0 15px;
+}
+
+.icon-text {
+    color: #97999B;
+    margin-right: 30px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.header-contact-container {
+    background-color: #1A2A36;
+    justify-content: space-around;
+    padding: 8px 2px 2px 2px;
+}
+
+.scoial-icon {
+    margin: 0 4px 0 4px;
+    color: var(--first--color);
+    font-size: 25px;
+    padding-bottom: 2px;
+}
+
+.scoial-icon::after {
+    content: '';
+    height: 45px;
+    width: 2px;
+    background-color: #97999B;
+    position: absolute;
+    bottom: 95%;
+    margin-left: 3px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-black-100);
+    padding: 13px;
+}
+
+.header-title {
+    color: var(--first--color);
+    font-size: 35px;
+    padding: 5px;
+}
+
+.header-title::after {
+    content: '';
+    height: 76.7px;
+    width: 1px;
+    background-color: #97999B;
+    position: absolute;
+    bottom: 83.5%;
+    margin-left: 3rem;
+}
+
+.header-title span {
+    color: var(--first--color);
+}
+
+.nav-container {
+    flex-grow: 0.7;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.link-container li {
+    margin-right: 4rem;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.link-container li a {
+    text-decoration: none;
+    color: var(--text-black-900);
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.link-container li a:hover {
+    color: var(--first--color);
+}
+
+
+/*FOOTER STYLES*/
+
+.footer-container {
+    background-color: #1A2A36;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacto-container h3 {
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.footer-icons {
+    padding: 10px;
+}
+
+.accesos-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 200px;
+}
+
+.accesos-container i {
+    padding-bottom: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.accesos-container a {
+    color: #97999B;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.accesos-container a:hover {
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer-icon {
+    font-size: 30px;
+    border: 2px solid #97999B;
+    color: #97999B;
+    margin: 14px;
+    border-radius: 30px;
+    padding: 6px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.footer-icon:hover {
+    background-color: #fff;
+    color: var(--first--color);
+}
