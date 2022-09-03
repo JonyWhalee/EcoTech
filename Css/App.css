@@ -5,21 +5,9 @@
     src: url(../Fonts/Atmospheric-rg4aL.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /*VARIABLES CSS*/
-
-:root {
-    --bg-black-900: #f2f2fc;
-    --bg-black-100: #fdf9ff;
-    --bg-black-50: #e8dfec;
-    --text-black-900: #302e4d;
-    --text-black-700: #504e70;
-    --first--color: #27a919;
-    --fist--color-dark: #0B6133;
-    --second--color: #0d31a7;
-}
-
 
 /*Base*/
 
@@ -27,6 +15,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html {
@@ -34,9 +23,8 @@ html {
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: "Roboto";
 }
-
 
 /*HEADER STYLES*/
 
@@ -55,14 +43,14 @@ body {
 }
 
 .icon-text {
-    color: #97999B;
+    color: #97999b;
     margin-right: 30px;
     font-size: 16px;
     margin-left: 10px;
 }
 
 .header-contact-container {
-    background-color: #1A2A36;
+    background-color: #1a2a36;
     justify-content: space-around;
     padding: 8px 2px 2px 2px;
 }
@@ -75,10 +63,10 @@ body {
 }
 
 .scoial-icon::after {
-    content: '';
+    content: "";
     height: 36px;
     width: 2px;
-    background-color: #97999B;
+    background-color: #97999b;
     position: absolute;
     top: 0.1rem;
     margin-left: 3px;
@@ -105,10 +93,10 @@ body {
 }
 
 .header-title::after {
-    content: '';
+    content: "";
     height: 76.7px;
     width: 1px;
-    background-color: #97999B;
+    background-color: #97999b;
     position: absolute;
     top: 2.3rem;
     margin-left: 3rem;
@@ -147,72 +135,203 @@ body {
     color: var(--first--color);
 }
 
+/*Footer*/
 
-/*FOOTER STYLES*/
-
-.footer-container {
-    background-color: #1A2A36;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px;
+footer {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contacto-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.contacto-container h3 {
+footer p {
     color: #fff;
-    font-weight: 600;
-    padding: 10px;
+    line-height: 25px;
 }
 
-.footer-icons {
-    padding: 10px;
-}
-
-.accesos-container {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 200px;
-}
-
-.accesos-container i {
-    padding-bottom: 16px;
-    font-size: 13px;
-    font-weight: 700;
-    margin-right: 8px;
-}
-
-.accesos-container a {
-    color: #97999B;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: 700;
-    transition: all 0.3s;
-}
-
-.accesos-container a:hover {
+footer h4 {
+    color: #fff;
     font-size: 20px;
-    color: #fff;
 }
 
-.footer-icon {
-    font-size: 30px;
-    border: 2px solid #97999B;
-    color: #97999B;
-    margin: 14px;
-    border-radius: 30px;
-    padding: 6px;
-    transition: all 0.3s;
+.footer-top {
+    background-color: #a98467;
+    padding: 80px 0;
+}
+
+.segment-one h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #6c584c;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.segment-one h4:hover {
+    transform: scale(1.09);
+    transition: all 1s;
+}
+
+.segment-one p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.segment-two h4 {
+    color: #6c584c;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 10px 0;
     cursor: pointer;
 }
 
-.footer-icon:hover {
-    background-color: #fff;
-    color: var(--first--color);
+.segment-three h4 {
+    color: #6c584c;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.segment-three a {
+    padding: 12px;
+    background: #f0ead2;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.segment-three a i {
+    font-size: 25px;
+    color: #000;
+}
+
+.facebook i {
+    color: #fff;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.facebook i:hover {
+    color: #3b5998;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.instagram i {
+    color: #fff;
+    margin-left: 2px;
+    font-size: 30px;
+    border-radius: 45%;
+    transition: all 1s;
+}
+
+.instagram i:hover {
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
+    transform: scale(1.5);
+    transition: all 1s;
+    border-radius: 45%;
+}
+
+.twitter i {
+    color: #fff;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.twitter i:hover {
+    color: #1d9bf0;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.linkedin i {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 2px;
+    transition: all 1s;
+}
+
+.linkedin i:hover {
+    color: #2561a9;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.segment-four h4 {
+    color: #6c584c;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.segment-two h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-three h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-four h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-four p {
+    cursor: pointer;
+}
+
+.footer-bottom-text {
+    background-color: #6c584c;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+/* btn whtsp */
+.whatsapp {
+    height: 50px;
+    width: 50px;
+    background-color: #46df62;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    align-items: center;
+    border: #fff solid 3px;
+    transition: all 1s;
+    overflow: hidden;
+}
+.whatsapp i {
+    color: #fff;
+    font-size: 30px;
+    line-height: 45px;
+}
+.whatsapp:hover {
+    transform: scale(1.1);
+    transition: all 1s;
 }
