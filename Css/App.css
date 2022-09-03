@@ -33,6 +33,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html {
@@ -154,6 +155,9 @@ body {
 }
 
 
+/*Footer*/
+
+
 /*SLIDER STYLES*/
 
 .swiper {
@@ -201,11 +205,14 @@ body {
 .slider-container h2,
 .slider-container a {
     color: #fff;
+    font-size: 30px;
+    transition: all 1s;
 }
 
-.slider-container h2 {
-    padding-bottom: 0rem;
-    font-size: 45px;
+.facebook i:hover {
+    color: #3b5998;
+    transform: scale(1.5);
+    transition: all 1s;
 }
 
 .text-slider {
@@ -342,6 +349,48 @@ footer h4 {
 .twitter i {
     color: #fff;
     font-size: 30px;
+    margin-left: 2px;
+    transition: all 1s;
+}
+
+.linkedin i:hover {
+    color: #2561a9;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.segment-four h4 {
+    color: #6c584c;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.segment-two h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-three h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-four h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-four p {
+    cursor: pointer;
+    font-size: 30px;
     transition: all 1s;
 }
 
@@ -404,6 +453,8 @@ footer h4 {
     cursor: pointer;
     margin-bottom: 0;
     font-size: 12px;
+    margin-bottom: 0;
+    font-size: 12px;
 }
 
 
@@ -434,3 +485,15 @@ footer h4 {
     transform: scale(1.1);
     transition: all 1s;
 }
+
+<<<<<<< HEAD .whatsapp:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+=======.whatsapp:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+>>>>>>>b753efd44eafc2f912117cec69156ee946407abc
