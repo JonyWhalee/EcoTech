@@ -330,20 +330,14 @@ body {
     color: #000;
 }
 
-/* .tools {
-    margin-top: 1rem;
-} */
-
 /*CONTADOR STYLES*/
 
 @keyframes aparecer {
     0% {
         opacity: 0;
-        /* transform: translateY(100px); */
     }
     100% {
         opacity: 1;
-        /* transform: translateY(0); */
     }
 }
 
@@ -612,48 +606,6 @@ button:hover .button-text {
     grid-area: 1 / 4 / 2 / 5;
     background-color: blue;
 }
-/*
-.item1 {
-    background-image: url("https://image.api.playstation.com/vulcan/img/rnd/202111/0822/zDXM9K2cQiq0vKTDwF0TkAor.png");
-}
-
-.item2 {
-    background-image: url("https://i.blogs.es/53a886/uncharted4/1366_2000.jpeg");
-}
-
-.item3 {
-    background-image: url("https://www.hd-tecnologia.com/imagenes/articulos/2020/02/Seg%C3%BAn-un-estudio-League-Of-Legends-gener%C3%B3-m%C3%A1s-de-3-millones-de-toneladas-de-CO2-en-2019.jpg");
-}
-
-.item4 {
-    background-image: url("https://hb.imgix.net/34d00dbb25a14ac6ce87956f5ff12b1692cfc203.jpeg?auto=compress,format&fit=crop&h=353&w=616&s=d497ac18c019604679313c031fd7c3a1");
-}
-
-.item5 {
-    background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/07/horizon-2-forbidden-west-2013847.jpg?itok=jWf3tCO9");
-}
-
-.item6 {
-    background-image: url("https://i.ytimg.com/vi/E3Huy2cdih0/maxresdefault.jpg");
-    background-size: cover;
-    background-position: top;
-}
-
-.item7 {
-    background-image: url("https://assets.nintendo.com/image/upload/c_pad,f_auto,h_613,q_auto,w_1089/ncom/es_MX/games/switch/m/minecraft-switch/hero?v=2021120802");
-}
-
-.item8 {
-    background-image: url("https://i.blogs.es/dbfd92/150620-re8-tlqns/1366_2000.jpeg");
-    background-size: cover;
-    transition: all 1s;
-}
-
-.item8:hover {
-    transform: scale(1.02);
-    transition: all 1s;
-} */
-
 /*Footer*/
 
 footer {
