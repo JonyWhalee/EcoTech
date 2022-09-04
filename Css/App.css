@@ -21,7 +21,6 @@
     --fondo: #f0ead2;
 }
 
-
 /*Base*/
 
 *::before,
@@ -43,7 +42,6 @@ html {
 body {
     font-family: "Roboto";
 }
-
 
 /*HEADER STYLES*/
 
@@ -154,9 +152,7 @@ body {
     color: var(--first--color);
 }
 
-
 /*Footer*/
-
 
 /*SLIDER STYLES*/
 
@@ -307,7 +303,6 @@ body {
     margin-top: 1rem;
 }
 
-
 /*Footer*/
 
 footer {
@@ -404,7 +399,13 @@ footer h4 {
 }
 
 .instagram i:hover {
-    background: radial-gradient( circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    background: radial-gradient( 
+      circle at 33% 100%, 
+      #fed373 4%, 
+      #f15245 30%, 
+      #d92e7f 62%,
+      #9b36b7 85%, 
+      #515ecf);
     color: #fff;
     transform: scale(1.5);
     transition: all 1s;
@@ -514,7 +515,6 @@ footer h4 {
     margin-bottom: 0;
     font-size: 12px;
 }
-
 
 /* btn whtsp */
 
