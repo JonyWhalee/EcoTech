@@ -21,6 +21,7 @@
     --fondo: #f0ead2;
 }
 
+
 /*Base*/
 
 *::before,
@@ -43,6 +44,7 @@ body {
     background-color: #f2f2fc;
     font-family: "Roboto";
 }
+
 
 /*HEADER STYLES*/
 
@@ -101,7 +103,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: var(--fondo);
-    padding: 13px;
+    padding-top: 1rem;
 }
 
 .header-title {
@@ -112,7 +114,7 @@ body {
 
 .header-title::after {
     content: "";
-    height: 85px;
+    height: 76px;
     width: 1px;
     background-color: #97999b;
     position: absolute;
@@ -132,6 +134,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: right;
+    align-items: baseline;
 }
 
 .link-container li {
@@ -144,7 +147,7 @@ body {
 .link-container li a {
     text-decoration: none;
     color: var(--text-black-900);
-    font-size: 18px;
+    font-size: 1.6rem;
     font-weight: 700;
     transition: all 0.3s;
 }
@@ -158,13 +161,15 @@ body {
     color: var(--first--color);
 }
 
+
 /*Footer*/
+
 
 /*SLIDER STYLES*/
 
 .swiper {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     margin-bottom: 0rem;
 }
 
@@ -206,8 +211,13 @@ body {
 .slider-container h2,
 .slider-container a {
     color: #fff;
-    font-size: 30px;
     transition: all 1s;
+}
+
+.slider-container h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
 }
 
 .facebook i:hover {
@@ -221,9 +231,11 @@ body {
 }
 
 .slider-container p {
-    padding-bottom: 2rem;
-    font-size: 20px;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
     font-weight: 600;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .slider-container a {
@@ -232,13 +244,14 @@ body {
     padding: 0.7rem;
     border-radius: 3rem;
     transition: all 0.5s;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .slider-container a:hover {
     color: var(--first--color);
     background-color: var(--fondo);
 }
+
 
 /*Values*/
 
@@ -289,6 +302,7 @@ body {
     border-radius: 5rem;
     transition: all 0.3s;
 }
+
 .engordar {
     padding: 1.09rem 1.5rem !important;
 }
@@ -309,36 +323,143 @@ body {
     color: #000;
 }
 
+
 /* .tools {
     margin-top: 1rem;
 } */
 
+
+/*CONTADOR STYLES*/
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ocultar {
+    opacity: 0;
+}
+
+.animar {
+    animation: aparecer 1.3s;
+}
+
+.contador-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-top: 1rem;
+    background-color: var(--fondo);
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 2rem;
+    border-radius: 8rem;
+}
+
+.contador-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contador-number-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contador-span {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-right: 0.5rem;
+    color: var(--fist--color-dark);
+}
+
+.contador-item-container h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 0rem 1rem 0rem 1rem;
+    font-weight: 600;
+    color: #6c584c;
+}
+
+#contador_cantidad {
+    font-size: 4rem;
+    padding-right: 0.6rem;
+    color: var(--fist--color-dark);
+}
+
+
 /* Background fixed */
+
+#fixed_cantidad {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
 .fixed {
     width: 100%;
-    height: 300px;
+    height: 450px;
     background-image: url("../Img/panel-solar.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+
 .fixed h2,
 p {
     text-align: center;
     color: #fff;
 }
+
+.fixed-counter span {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.fixed-counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed p {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.fixed h3 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
 .fixed h2 {
     font-weight: 900;
     padding-top: 2rem;
-    font-size: 4rem;
+    font-size: 3.6rem;
     color: var(--fist--color-dark);
 }
+
 .fixed-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .fixed-content a {
     text-decoration: none;
     color: #fff;
@@ -431,6 +552,7 @@ button:hover .circle .icon.arrow {
 button:hover .button-text {
     color: #fff;
 }
+
 
 /*Footer*/
 
@@ -528,14 +650,7 @@ footer h4 {
 }
 
 .instagram i:hover {
-    background: radial-gradient(
-        circle at 33% 100%,
-        #fed373 4%,
-        #f15245 30%,
-        #d92e7f 62%,
-        #9b36b7 85%,
-        #515ecf
-    );
+    background: radial-gradient( circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
     color: #fff;
     transform: scale(1.5);
     transition: all 1s;
@@ -554,6 +669,7 @@ footer h4 {
     transform: scale(1.5);
     transition: all 1s;
 }
+
 
 /* .segment-two h4::before {
     content: "|";
@@ -645,6 +761,7 @@ footer h4 {
     margin-bottom: 0;
     font-size: 12px;
 }
+
 
 /* btn whtsp */
 
