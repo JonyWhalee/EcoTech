@@ -40,6 +40,7 @@ html {
 }
 
 body {
+    background-color: #f2f2fc;
     font-family: "Roboto";
 }
 
@@ -152,13 +153,18 @@ body {
     color: var(--first--color);
 }
 
+.link-container li a:focus,
+.link-container li a:hover {
+    color: var(--first--color);
+}
+
 /*Footer*/
 
 /*SLIDER STYLES*/
 
 .swiper {
     width: 100%;
-    height: 75vh;
+    height: 90vh;
     margin-bottom: 0rem;
 }
 
@@ -234,7 +240,6 @@ body {
     background-color: var(--fondo);
 }
 
-
 /*Values*/
 
 .valores-container {
@@ -259,7 +264,7 @@ body {
     text-align: justify;
     width: 20rem;
     word-spacing: normal;
-    font-size: 13px
+    font-size: 13px;
 }
 
 .valores-atributes-container {
@@ -276,12 +281,16 @@ body {
 
 .valores-icon-container i {
     font-size: 35px;
-    padding: 1rem;
+    padding: 1.09rem;
     color: var(--first--color);
     background-color: var(--fondo);
     margin-right: 2rem;
+    margin-top: 0.5rem;
     border-radius: 5rem;
     transition: all 0.3s;
+}
+.engordar {
+    padding: 1.09rem 1.5rem !important;
 }
 
 .valores-container i:hover {
@@ -297,10 +306,130 @@ body {
 .valores-container p {
     font-size: 13px;
     padding-right: 1rem;
+    color: #000;
 }
 
-.tools {
+/* .tools {
     margin-top: 1rem;
+} */
+
+/* Background fixed */
+.fixed {
+    width: 100%;
+    height: 300px;
+    background-image: url("../Img/panel-solar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fixed h2,
+p {
+    text-align: center;
+    color: #fff;
+}
+.fixed h2 {
+    font-weight: 900;
+    padding-top: 2rem;
+    font-size: 4rem;
+    color: var(--fist--color-dark);
+}
+.fixed-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fixed-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #adc178;
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
 }
 
 /*Footer*/
@@ -399,13 +528,14 @@ footer h4 {
 }
 
 .instagram i:hover {
-    background: radial-gradient( 
-      circle at 33% 100%, 
-      #fed373 4%, 
-      #f15245 30%, 
-      #d92e7f 62%,
-      #9b36b7 85%, 
-      #515ecf);
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
     color: #fff;
     transform: scale(1.5);
     transition: all 1s;
@@ -425,7 +555,7 @@ footer h4 {
     transition: all 1s;
 }
 
-.segment-two h4::before {
+/* .segment-two h4::before {
     content: "|";
     font-weight: 900;
     color: #adc178;
@@ -437,7 +567,7 @@ footer h4 {
     font-weight: 900;
     color: #adc178;
     padding-right: 10px;
-}
+} */
 
 .segment-four h4 {
     color: #6c584c;
