@@ -16,7 +16,7 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
     --first--color: #adc178;
-    --fist--color-dark: #0b6133;
+    --fist--color-dark: #09944a;
     --second--color: #0d31a7;
     --fondo: #f0ead2;
 }
@@ -183,10 +183,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-bottom: 100%;
 }
 
 .slider-1 {
-    background-color: rgba(0, 0, 0, 0.8);
     background-image: url(../Img/Carrusel1.jpg);
     background-position: center;
     background-size: cover;
@@ -208,16 +209,16 @@ body {
 }
 
 .slider-container p,
-.slider-container h2,
 .slider-container a {
     color: #fff;
     transition: all 1s;
 }
 
 .slider-container h2 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 800;
     padding-bottom: 1rem;
+    color: var(--fist--color-dark);
 }
 
 .facebook i:hover {
@@ -232,24 +233,50 @@ body {
 
 .slider-container p {
     padding-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 600;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 .slider-container a {
-    text-decoration: none;
-    background-color: var(--fist--color-dark);
-    padding: 0.7rem;
-    border-radius: 3rem;
-    transition: all 0.5s;
-    font-size: 2rem;
+    padding: 0.5em 1.4em;
+    border: 0px solid var(--fist--color-dark);
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 900;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #fff;
+    border-radius: 4rem;
+}
+
+.slider-container a::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #fff;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.slider-container a:hover::before {
+    width: 105%;
 }
 
 .slider-container a:hover {
-    color: var(--first--color);
-    background-color: var(--fondo);
+    color: var(--text-black-900);
+    text-decoration: none;
 }
 
 
@@ -267,9 +294,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    text-align: left;
-    padding: 0rem 3rem 3rem 3rem;
+    padding: 0rem 3rem 3rem 2rem;
+}
+
+.valores-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .valores-text {
@@ -277,19 +308,21 @@ body {
     text-align: justify;
     width: 20rem;
     word-spacing: normal;
-    font-size: 13px;
+    font-size: 1.5rem;
 }
 
 .valores-atributes-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .valores-icon-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .valores-icon-container i {
@@ -297,7 +330,7 @@ body {
     padding: 1.09rem;
     color: var(--first--color);
     background-color: var(--fondo);
-    margin-right: 2rem;
+    margin-bottom: 1rem;
     margin-top: 0.5rem;
     border-radius: 5rem;
     transition: all 0.3s;
@@ -313,14 +346,29 @@ body {
 }
 
 .valores-container h4 {
-    font-size: 20px;
-    margin-bottom: 2px;
+    font-size: 1.7rem;
+    margin-bottom: 4px;
 }
 
 .valores-container p {
-    font-size: 13px;
+    font-size: 1.5rem;
     padding-right: 1rem;
     color: #000;
+}
+
+.valores-title h3 {
+    background-color: var(--fondo);
+    color: var(--first--color);
+    padding: 1rem;
+    border-radius: 3rem;
+    font-weight: 900;
+    font-size: 2.5rem;
+    transition: all 0.3s;
+}
+
+.valores-title h3:hover {
+    background-color: var(--first--color);
+    color: var(--fondo);
 }
 
 
