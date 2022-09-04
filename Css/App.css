@@ -9,13 +9,30 @@
 
 /*VARIABLES CSS*/
 
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --first--color: #adc178;
+    --fist--color-dark: #0b6133;
+    --second--color: #0d31a7;
+    --fondo: #f0ead2;
+}
+
 /*Base*/
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 html {
@@ -82,24 +99,24 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--bg-black-100);
+    background-color: var(--fondo);
     padding: 13px;
 }
 
 .header-title {
-    color: var(--first--color);
+    color: var(--fist--color-dark);
     font-size: 35px;
     padding: 5px;
 }
 
 .header-title::after {
     content: "";
-    height: 76.7px;
+    height: 85px;
     width: 1px;
     background-color: #97999b;
     position: absolute;
-    top: 2.3rem;
     margin-left: 3rem;
+    top: 0.0001rem;
 }
 
 .header-title span {
@@ -133,6 +150,93 @@ body {
 
 .link-container li a:hover {
     color: var(--first--color);
+}
+
+/*Footer*/
+
+/*SLIDER STYLES*/
+
+.swiper {
+    width: 100%;
+    height: 75vh;
+    margin-bottom: 5rem;
+    z-index: 3;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url(../Img/Carrusel1.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.slider-2 {
+    background-image: url(../Img/Carrusel3.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.slider-3 {
+    background-image: url(../Img/carousel-2.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(0.8);
+}
+
+.slider-container p,
+.slider-container h2,
+.slider-container a {
+    color: #fff;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.facebook i:hover {
+    color: #3b5998;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.text-slider {
+    padding-top: 8rem;
+}
+
+.slider-container p {
+    padding-bottom: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.slider-container a {
+    text-decoration: none;
+    background-color: var(--fist--color-dark);
+    padding: 0.7rem;
+    border-radius: 3rem;
+    transition: all 0.5s;
+    font-size: 20px;
+}
+
+.slider-container a:hover {
+    color: var(--first--color);
+    background-color: var(--fondo);
+}
+
+.swiper-pagination {
+    margin-right: 1.5rem;
 }
 
 /*Footer*/
@@ -239,6 +343,7 @@ footer h4 {
         #9b36b7 85%,
         #515ecf
     );
+    color: #fff;
     transform: scale(1.5);
     transition: all 1s;
     border-radius: 45%;
@@ -247,6 +352,41 @@ footer h4 {
 .twitter i {
     color: #fff;
     font-size: 30px;
+    margin-left: 2px;
+    transition: all 1s;
+}
+
+.linkedin i:hover {
+    color: #2561a9;
+    transform: scale(1.5);
+    transition: all 1s;
+}
+
+.segment-two h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-three h4::before {
+    content: "|";
+    font-weight: 900;
+    color: #adc178;
+    padding-right: 10px;
+}
+
+.segment-four h4 {
+    color: #6c584c;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.segment-four p {
+    cursor: pointer;
+    font-size: 16px;
     transition: all 1s;
 }
 
@@ -309,9 +449,12 @@ footer h4 {
     cursor: pointer;
     margin-bottom: 0;
     font-size: 12px;
+    margin-bottom: 0;
+    font-size: 12px;
 }
 
 /* btn whtsp */
+
 .whatsapp {
     height: 50px;
     width: 50px;
@@ -326,11 +469,18 @@ footer h4 {
     transition: all 1s;
     overflow: hidden;
 }
+
 .whatsapp i {
     color: #fff;
     font-size: 30px;
     line-height: 45px;
 }
+
+.whatsapp:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
 .whatsapp:hover {
     transform: scale(1.1);
     transition: all 1s;
