@@ -152,6 +152,11 @@ body {
     color: var(--first--color);
 }
 
+.link-container li a:focus,
+.link-container li a:hover {
+    color: var(--first--color);
+}
+
 /*Footer*/
 
 /*SLIDER STYLES*/
@@ -237,6 +242,37 @@ body {
 
 .swiper-pagination {
     margin-right: 1.5rem;
+}
+
+/* Background fixed */
+.fixed {
+    width: 100%;
+    height: 300px;
+    background-image: url("../Img/panel-solar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.fixed h2,
+p {
+    text-align: center;
+    color: #fff;
+}
+.fixed h2 {
+    font-weight: 900;
+    padding-top: 2rem;
+    font-size: 4rem;
+    color: var(--fist--color-dark);
+}
+.fixed-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.fixed-content a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /*Footer*/
@@ -362,7 +398,7 @@ footer h4 {
     transition: all 1s;
 }
 
-.segment-two h4::before {
+/* .segment-two h4::before {
     content: "|";
     font-weight: 900;
     color: #adc178;
@@ -374,7 +410,7 @@ footer h4 {
     font-weight: 900;
     color: #adc178;
     padding-right: 10px;
-}
+} */
 
 .segment-four h4 {
     color: #6c584c;
