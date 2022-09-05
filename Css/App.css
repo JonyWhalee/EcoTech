@@ -18,7 +18,6 @@
     --fondo: #f0ead2;
 }
 
-
 /*Base*/
 
 *::before,
@@ -30,7 +29,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
 }
 
 html {
@@ -42,7 +40,13 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: -webkit-gradient( linear, left top, left bottom, from(transparent), to(#051d2b));
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(transparent),
+        to(#051d2b)
+    );
     background: linear-gradient(transparent, var(--first--color));
     border-radius: 40px;
 }
@@ -51,7 +55,6 @@ body {
     background-color: #f2f2fc;
     font-family: "Roboto";
 }
-
 
 /*HEADER STYLES*/
 
@@ -75,17 +78,6 @@ body {
     background-color: var(--first--color);
     padding: 1rem;
 }
-
-
-/* .header-title {
-    color: var(--first--color);
-    font-size: 35px;
-    padding: 5px;
-}
-
-.header-title span {
-    color: var(--first--color);
-} */
 
 .icon-main {
     display: flex;
@@ -144,9 +136,7 @@ body {
     color: var(--fondo);
 }
 
-
 /*Footer*/
-
 
 /*SLIDER STYLES*/
 
@@ -264,7 +254,6 @@ body {
     font-weight: 900;
 }
 
-
 /*Values*/
 
 .valores-container {
@@ -292,7 +281,6 @@ body {
     text-align: justify;
     width: 20rem;
     word-spacing: normal;
-    /* font-size: 10rem; */
 }
 
 .valores-atributes-container {
@@ -341,27 +329,10 @@ body {
     color: #000;
 }
 
-
-/* .valores-title h3 {
-    background-color: var(--fondo);
-    color: var(--first--color);
-    padding: 1rem;
-    border-radius: 3rem;
-    font-weight: 900;
-    font-size: 2.5rem;
-    transition: all 0.3s;
-}
-
-.valores-title h3:hover {
-    background-color: var(--first--color);
-    color: var(--fondo);
-} */
-
 .valores-title img {
     height: 200px;
     width: 200px;
 }
-
 
 /*CONTADOR STYLES*/
 
@@ -429,7 +400,6 @@ body {
     padding-right: 0.6rem;
     color: var(--fist--color-dark);
 }
-
 
 /* Background fixed */
 
@@ -587,7 +557,6 @@ button:hover .button-text {
     color: #fff;
 }
 
-
 /* Grids cards */
 
 .title-grid {
@@ -656,7 +625,6 @@ button:hover .button-text {
     grid-area: 1 / 4 / 2 / 5;
     background-color: blue;
 }
-
 
 /*Footer*/
 
@@ -754,7 +722,14 @@ footer h4 {
 }
 
 .instagram i:hover {
-    background: radial-gradient( circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 4%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
     color: #fff;
     transform: scale(1.5);
     transition: all 1s;
@@ -773,7 +748,6 @@ footer h4 {
     transform: scale(1.5);
     transition: all 1s;
 }
-
 
 /* .segment-two h4::before {
     content: "|";
@@ -866,7 +840,6 @@ footer h4 {
     font-size: 12px;
 }
 
-
 /* btn whtsp */
 
 .whatsapp {
@@ -882,6 +855,7 @@ footer h4 {
     border: #fff solid 3px;
     transition: all 1s;
     overflow: hidden;
+    z-index: 1;
 }
 
 .whatsapp i {
