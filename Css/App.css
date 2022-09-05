@@ -384,7 +384,7 @@ body {
     font-size: 4rem;
     font-weight: 600;
     padding-right: 0.5rem;
-    color: var(--fist--color-dark);
+    color: var(--first--color);
 }
 
 .contador-item-container h2 {
@@ -398,7 +398,7 @@ body {
 #contador_cantidad {
     font-size: 4rem;
     padding-right: 0.6rem;
-    color: var(--fist--color-dark);
+    color: var(--first--color);
 }
 
 /* Background fixed */
@@ -569,6 +569,9 @@ button:hover .button-text {
     color: var(--first--color);
     cursor: pointer;
     padding: 100px;
+    padding: 2rem;
+    background-color: var(--fondo);
+    border-radius: 2rem 2rem 0 0;
 }
 
 .title-grid h1 {
@@ -586,7 +589,7 @@ button:hover .button-text {
     grid-row-gap: 10px;
     padding: 2rem;
     background-color: var(--fondo);
-    border-radius: 2rem;
+    border-radius: 0 0 2rem 2rem;
 }
 
 .parent div {
@@ -604,6 +607,11 @@ button:hover .button-text {
     background-color: var(--fondo);
     padding: 1.1rem;
     border-radius: 5rem;
+    transition: all 0.4s;
+}
+.parent div i:hover {
+    background-color: var(--first--color);
+    color: var(--fondo);
 }
 
 .div1 {
@@ -620,6 +628,9 @@ button:hover .button-text {
     grid-area: 1 / 2 / 3 / 4;
     background-color: var(--first--color);
 }
+/* .div3 p {
+    margin-bottom: rem;
+} */
 
 .div4 {
     grid-area: 3 / 1 / 5 / 3;
@@ -706,6 +717,9 @@ footer h4 {
     margin: 10px 0;
     cursor: pointer;
 }
+/* .center-icon-redes {
+    text-align: center;
+} */
 
 .segment-three h4 {
     color: #6c584c;
@@ -727,7 +741,7 @@ footer h4 {
 
 .segment-three a i {
     font-size: 25px;
-    color: #000;
+    color: #6c584c;
 }
 
 .facebook i {
@@ -737,13 +751,12 @@ footer h4 {
 }
 
 .facebook i:hover {
-    color: #3b5998;
+    color: #a98467;
     transform: scale(1.5);
     transition: all 1s;
 }
 
 .instagram i {
-    color: #fff;
     margin-left: 2px;
     font-size: 30px;
     border-radius: 45%;
@@ -751,49 +764,14 @@ footer h4 {
 }
 
 .instagram i:hover {
-    background: radial-gradient(
-        circle at 33% 100%,
-        #fed373 4%,
-        #f15245 30%,
-        #d92e7f 62%,
-        #9b36b7 85%,
-        #515ecf
-    );
-    color: #fff;
+    color: #a98467;
     transform: scale(1.5);
     transition: all 1s;
     border-radius: 45%;
 }
 
-.twitter i {
-    color: #fff;
-    font-size: 30px;
-    margin-left: 2px;
-    transition: all 1s;
-}
-
-.linkedin i:hover {
-    color: #2561a9;
-    transform: scale(1.5);
-    transition: all 1s;
-}
-
-/* .segment-two h4::before {
-    content: "|";
-    font-weight: 900;
-    color: #adc178;
-    padding-right: 10px;
-}
-
-.segment-three h4::before {
-    content: "|";
-    font-weight: 900;
-    color: #adc178;
-    padding-right: 10px;
-} */
-
 .segment-four h4 {
-    color: #6c584c;
+    color: #a98467;
     text-transform: capitalize;
     letter-spacing: 3px;
     margin: 10px 0;
@@ -901,4 +879,17 @@ footer h4 {
 .whatsapp:hover {
     transform: scale(1.1);
     transition: all 1s;
+}
+
+/* Medias queries */
+
+@media (min-width: 320px) {
+}
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024) {
+}
+@media (min-width: 1200px) {
 }
