@@ -893,6 +893,13 @@
         .valores-title-container {
             padding: 1rem;
         }
+        .valores-container p {
+            padding: 0;
+            font-size: 1rem;
+        }
+        .valores-text {
+            width: fit-content;
+        }
         .title-grid h1 {
             font-size: 2.3rem;
         }
@@ -945,7 +952,39 @@
             display: none;
         }
         #fixed_cantidad {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
+        }
+        .fixed-counter span {
+            font-size: 1.7rem;
+        }
+        .fixed h2 {
+            font-size: 1.8rem;
+        }
+        .fixed h3 {
+            font-size: 1.6rem;
+            padding: 0.8rem;
+            text-align: center;
+        }
+        .fixed p {
+            font-size: 1.3rem;
+        }
+        .contador-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0rem;
+            margin: 0.4rem;
+            border-radius: 2rem;
+        }
+        .contador-span {
+            font-size: 2rem;
+        }
+        .contador-item-container h2 {
+            font-size: 1.2rem;
+        }
+        #contador_cantidad {
+            font-size: 2rem;
+            padding-right: 0;
         }
     }
     
