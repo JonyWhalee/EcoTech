@@ -5,7 +5,7 @@ let swiper = new Swiper(".mySwiper", {
     centeredSlides: true,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
     },
 });
@@ -46,3 +46,46 @@ addEventListener("DOMContentLoaded", () => {
         observer.observe(elementoHTML);
     });
 });
+
+// menu burger
+
+const navMenu = document.getElementById("nav-menu"),
+    navToggle = document.getElementById("nav-toggle"),
+    navClose = document.getElementById("nav-close");
+
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if (navToggle) {
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.add("show-menu");
+    });
+}
+
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if (navClose) {
+    navClose.addEventListener("click", () => {
+        navMenu.classList.remove("show-menu");
+    });
+}
+
+// let burger_nav = ()=>{
+//     let menu = document.querySelector(".menu-burger");
+//     let nav = document.querySelector(".nav-links");
+//     let nav_list = document.querySelectorAll(".nav-links li");
+//     //
+//     menu.addEventListener("click", () =>{
+//         nav.classList.toggle("nav-active");
+//     //
+//     nav_list.forEach((link, index) =>{
+//         if(link.style.animation){
+//             link.style.animation = "";
+//         }
+//         else{
+//             link.style.animation =  `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
+//         }
+//     //
+//     menu.classList.toggle(`toggle`)
+//     })
+// });}
+// burger_nav();
