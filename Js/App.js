@@ -1,11 +1,11 @@
 let swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
+    direction: "horizontal",
     slidesPerview: 1,
     spaceBetween: 10,
     centeredSlides: true,
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 5000,
         disableOnInteraction: false,
     },
 });
@@ -39,7 +39,7 @@ addEventListener("DOMContentLoaded", () => {
         });
     };
     const observer = new IntersectionObserver(mostrarContadores, {
-        threshold: 0.75,
+        threshold: 0.20,
     });
     const elementosHTML = document.querySelectorAll(".contador");
     elementosHTML.forEach(elementoHTML => {
