@@ -1,5 +1,5 @@
 let swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
+    direction: "horizontal",
     slidesPerview: 1,
     spaceBetween: 10,
     centeredSlides: true,
@@ -39,7 +39,7 @@ addEventListener("DOMContentLoaded", () => {
         });
     };
     const observer = new IntersectionObserver(mostrarContadores, {
-        threshold: 0.75,
+        threshold: 0.2,
     });
     const elementosHTML = document.querySelectorAll(".contador");
     elementosHTML.forEach(elementoHTML => {
@@ -48,26 +48,6 @@ addEventListener("DOMContentLoaded", () => {
 });
 
 // menu burger
-
-const navMenu = document.getElementById("nav-menu"),
-    navToggle = document.getElementById("nav-toggle"),
-    navClose = document.getElementById("nav-close");
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-if (navToggle) {
-    navToggle.addEventListener("click", () => {
-        navMenu.classList.add("show-menu");
-    });
-}
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-if (navClose) {
-    navClose.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu");
-    });
-}
 
 // let burger_nav = ()=>{
 //     let menu = document.querySelector(".menu-burger");
