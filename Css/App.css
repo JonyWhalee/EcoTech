@@ -397,7 +397,7 @@
     
     .fixed {
         width: 100%;
-        height: 450px;
+        max-height: 450px;
         background-image: url("../Img/panel-solar.jpg");
         background-size: cover;
         background-position: center;
@@ -465,7 +465,6 @@
         text-decoration: none;
         background: transparent;
         padding: 0;
-        font-size: inherit;
         font-family: inherit;
     }
     
@@ -874,10 +873,10 @@
             padding-top: 8rem;
         }
         .slider-container span {
-            font-size: 1.5rem;
+            font-size: 1.9rem;
         }
         .slider-container p {
-            font-size: 1rem;
+            font-size: 1.3rem;
             padding: 1.8rem;
         }
         .slider-container p span {
@@ -901,7 +900,14 @@
             width: fit-content;
         }
         .title-grid h1 {
-            font-size: 2.3rem;
+            font-size: 1.8rem;
+        }
+        .title-grid {
+            padding: 0px;
+            height: 70px;
+        }
+        .parent {
+            padding: 0.8rem;
         }
         .parent div {
             padding: 0rem;
@@ -911,15 +917,16 @@
             padding: 0.7rem;
         }
         .parent div h2 {
-            font-size: 0.8rem;
-            padding: 1rem;
+            font-size: 1rem;
+            padding: 0.4rem;
             font-weight: 800;
+            text-align: center;
         }
         .parent {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 10px;
-            grid-row-gap: 10px;
+            grid-column-gap: 6px;
+            grid-row-gap: 6px;
         }
         .div1 {
             grid-area: 1 / 1 / 2 / 2;
@@ -988,6 +995,47 @@
         }
         button.learn-more .button-text {
             font-size: 1rem;
+        }
+        @media (min-height: 641px) {
+            .fixed-content {
+                padding-bottom: 33%;
+            }
+            @media (min-height: 647px) {
+                .fixed-content {
+                    padding-bottom: 36%;
+                }
+            }
+            @media (min-height: 900px) {
+                .fixed-content {
+                    padding-bottom: 33%;
+                }
+            }
+        }
+        @media (min-width: 400px) {
+            .parent div i {
+                font-size: 2.5rem;
+            }
+            .parent div h2 {
+                font-size: 1.4rem;
+                padding: 0 0.8rem 0.1rem 0.8rem;
+            }
+            .slider-container a {
+                font-size: 1.1rem;
+            }
+            .slider-container span {
+                font-size: 2.1rem;
+            }
+            .slider-container p {
+                font-size: 1.5rem;
+            }
+            .slider-container p span {
+                font-size: 1.6rem;
+            }
+        }
+        @media (min-width: 479px) {
+            .fixed-content {
+                padding-bottom: 29%;
+            }
         }
     }
     

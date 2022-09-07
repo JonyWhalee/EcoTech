@@ -12,7 +12,7 @@ let swiper = new Swiper(".mySwiper", {
 
 addEventListener("DOMContentLoaded", () => {
     const contadores = document.querySelectorAll(".contador-cantidad");
-    const velocidad = 600;
+    const velocidad = 500;
     const animarContadores = () => {
         for (const contador of contadores) {
             const actualizar_contador = () => {
