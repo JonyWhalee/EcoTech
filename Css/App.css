@@ -55,18 +55,6 @@ body {
 }
 /*HEADER STYLES*/
 
-.header-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.header-contact-container {
-    background-color: #1a2a36;
-    justify-content: space-around;
-    padding: 1rem;
-    cursor: pointer;
-}
-
 .header-title-container {
     display: flex;
     flex-direction: row;
@@ -88,7 +76,7 @@ body {
 .icon-main span {
     padding-left: 1rem;
     color: #0d6737;
-    font-size: 35px;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -132,7 +120,36 @@ body {
 .link-container li a:hover {
     color: var(--fondo);
 }
-/*Footer*/
+.menu-burger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--fondo);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.menu-burger {
+    transition: all 1s;
+    display: none;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /*SLIDER STYLES*/
 
 .swiper {
@@ -393,6 +410,7 @@ body {
     padding-right: 0.6rem;
     color: var(--first--color);
 }
+
 /* Background fixed */
 
 #fixed_cantidad {
@@ -581,6 +599,7 @@ button:hover .button-text {
     padding: 2rem;
     background-color: var(--fondo);
     border-radius: 0 0 2rem 2rem;
+    overflow: hidden;
 }
 
 .parent div {
@@ -687,12 +706,6 @@ footer h4 {
     margin: 10px 0;
     text-align: center;
     cursor: pointer;
-    transition: all 1s;
-    overflow: hidden;
-}
-
-.segment-one h4:hover {
-    transform: scale(1.09);
     transition: all 1s;
 }
 
@@ -871,3 +884,217 @@ footer h4 {
     transition: all 1s;
 }
 /* Medias queries */
+
+@media screen and (max-width: 480px) {
+    .icon-main {
+        padding: 0;
+    }
+    .icon-main span {
+        padding-left: 0 rem;
+        font-size: 1.5rem;
+    }
+    .icon-main img {
+        height: 3.5rem;
+    }
+
+    .link-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 0.5;
+    }
+    nav ul {
+        position: fixed;
+        background: var(--first--color);
+        top: 4.5rem;
+        right: -100%;
+        text-align: center;
+        transition: all 1.5s;
+        z-index: 10;
+        border-radius: 0 0 0 1rem;
+    }
+
+    .link-container li {
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 50px;
+        line-height: 25px;
+    }
+    .link-container li a {
+        font-size: 1rem;
+    }
+    .checkbtn {
+        display: block;
+    }
+    .show-menu {
+        right: 0;
+    }
+    .no-move {
+        overflow: hidden;
+    }
+    .menu-burger {
+        display: block;
+    }
+    /*  */
+    .text-slider {
+        padding-top: 8rem;
+    }
+    .slider-container span {
+        font-size: 1.5rem;
+    }
+    .slider-container p {
+        font-size: 1rem;
+        padding: 1.8rem;
+    }
+    .slider-container p span {
+        font-size: 0.9rem;
+    }
+    .slider-container a {
+        font-size: 0.9rem;
+    }
+    .valores-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .valores-title-container {
+        padding: 1rem;
+    }
+    .valores-container p {
+        padding: 0;
+        font-size: 1rem;
+    }
+    .valores-text {
+        width: fit-content;
+    }
+    .title-grid h1 {
+        font-size: 2.3rem;
+    }
+    .parent div {
+        padding: 0rem;
+    }
+    .parent div i {
+        font-size: 1.8rem;
+        padding: 0.7rem;
+    }
+    .parent div h2 {
+        font-size: 0.8rem;
+        padding: 1rem;
+        font-weight: 800;
+    }
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .div3 {
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: #dbc39a;
+    }
+    .div4 {
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: #dbc39a;
+    }
+    .div5 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .div6 {
+        grid-area: 3 / 2 / 4 / 3;
+        background-color: #a98467;
+    }
+    .div7 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .div8 {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+    .parent div p {
+        display: none;
+    }
+    #fixed_cantidad {
+        font-size: 1.7rem;
+    }
+    .fixed-counter span {
+        font-size: 1.7rem;
+    }
+    .fixed h2 {
+        font-size: 1.8rem;
+    }
+    .fixed h3 {
+        font-size: 1.6rem;
+        padding: 0.8rem;
+        text-align: center;
+    }
+    .fixed p {
+        font-size: 1.3rem;
+    }
+    .contador-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem;
+        margin: 0.4rem;
+        border-radius: 2rem;
+    }
+    .contador-span {
+        font-size: 2rem;
+    }
+    .contador-item-container h2 {
+        font-size: 1.2rem;
+    }
+    #contador_cantidad {
+        font-size: 2rem;
+        padding-right: 0;
+    }
+    button.learn-more .button-text {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024) {
+}
+
+@media (min-width: 1200px) {
+    .link-container li a {
+        width: 14rem;
+        font-size: 1.5rem;
+    }
+    .tools {
+        padding-top: 0.2rem;
+    }
+    .nav-container {
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .tools {
+        padding-top: 2rem;
+    }
+    .parent {
+        min-height: 300px;
+        max-height: 800px;
+    }
+    .parent div i {
+        font-size: 2rem;
+        padding: 0.8rem;
+    }
+}

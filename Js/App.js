@@ -1,7 +1,7 @@
 let swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
     slidesPerview: 1,
-    spaceBetween: 10,
+    spaceBetween: 0,
     centeredSlides: true,
     loop: true,
     autoplay: {
@@ -47,25 +47,41 @@ addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// menu burger
+//nav burger
 
-// let burger_nav = ()=>{
-//     let menu = document.querySelector(".menu-burger");
-//     let nav = document.querySelector(".nav-links");
-//     let nav_list = document.querySelectorAll(".nav-links li");
-//     //
-//     menu.addEventListener("click", () =>{
-//         nav.classList.toggle("nav-active");
-//     //
-//     nav_list.forEach((link, index) =>{
-//         if(link.style.animation){
-//             link.style.animation = "";
-//         }
-//         else{
-//             link.style.animation =  `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
-//         }
-//     //
-//     menu.classList.toggle(`toggle`)
-//     })
-// });}
-// burger_nav();
+const ul = document.getElementById("ul");
+const body = document.getElementById("body");
+
+let burger_nav = () => {
+    let menu = document.querySelector(".menu-burger");
+    let nav = document.querySelector(".link-container");
+    let nav_list = document.querySelectorAll(".link-container li");
+    //
+    menu.addEventListener("click", () => {
+        val();
+        //
+        nav.classList.toggle("nav-active");
+        //
+        nav_list.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = "";
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${
+                    index / 5 + 0.5
+                }s`;
+            }
+            //
+            menu.classList.toggle(`toggle`);
+        });
+    });
+    function val() {
+        if (ul.classList.contains("show-menu")) {
+            ul.classList.remove("show-menu");
+            body.classList.remove("no-move");
+        } else {
+            ul.classList.add("show-menu");
+            body.classList.add("no-move");
+        }
+    }
+};
+burger_nav();
