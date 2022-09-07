@@ -986,6 +986,9 @@
             font-size: 2rem;
             padding-right: 0;
         }
+        button.learn-more .button-text {
+            font-size: 1rem;
+        }
     }
     
     @media (min-width: 480px) {}

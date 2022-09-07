@@ -1,7 +1,7 @@
 let swiper = new Swiper(".mySwiper", {
     direction: "horizontal",
     slidesPerview: 1,
-    spaceBetween: 10,
+    spaceBetween: 0,
     centeredSlides: true,
     loop: true,
     autoplay: {
