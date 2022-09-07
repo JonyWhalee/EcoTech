@@ -676,6 +676,7 @@ button:hover .button-text {
 .parent div h2 {
     color: #fff;
 }
+
 /*Footer*/
 
 footer {
@@ -707,6 +708,12 @@ footer h4 {
     text-align: center;
     cursor: pointer;
     transition: all 1s;
+    overflow: hidden;
+}
+
+.segment-one h4:hover {
+    transform: scale(1.09);
+    transition: all 1s;
 }
 
 .segment-one p {
@@ -721,9 +728,6 @@ footer h4 {
     margin: 10px 0;
     cursor: pointer;
 }
-/* .center-icon-redes {
-    text-align: center;
-} */
 
 .segment-three h4 {
     color: #6c584c;
@@ -850,6 +854,7 @@ footer h4 {
     margin-bottom: 0;
     font-size: 12px;
 }
+
 /* btn whtsp */
 
 .whatsapp {
@@ -883,6 +888,7 @@ footer h4 {
     transform: scale(1.1);
     transition: all 1s;
 }
+
 /* Medias queries */
 
 @media screen and (max-width: 480px) {
@@ -896,7 +902,6 @@ footer h4 {
     .icon-main img {
         height: 3.5rem;
     }
-
     .link-container {
         flex-direction: column;
         align-items: center;
@@ -929,9 +934,6 @@ footer h4 {
     .link-container li a {
         font-size: 1rem;
     }
-    .checkbtn {
-        display: block;
-    }
     .show-menu {
         right: 0;
     }
@@ -945,11 +947,14 @@ footer h4 {
     .text-slider {
         padding-top: 8rem;
     }
+    .swiper {
+        height: 65vh;
+    }
     .slider-container span {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
     .slider-container p {
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 1.8rem;
     }
     .slider-container p span {
@@ -973,25 +978,33 @@ footer h4 {
         width: fit-content;
     }
     .title-grid h1 {
-        font-size: 2.3rem;
+        font-size: 1.8rem;
+    }
+    .title-grid {
+        padding: 0px;
+        height: 70px;
+    }
+    .parent {
+        padding: 0.8rem;
     }
     .parent div {
-        padding: 0rem;
+        padding: 1rem 0rem 0rem 0rem;
     }
     .parent div i {
         font-size: 1.8rem;
         padding: 0.7rem;
     }
     .parent div h2 {
-        font-size: 0.8rem;
-        padding: 1rem;
+        font-size: 1rem;
+        padding: 0.4rem;
         font-weight: 800;
+        text-align: center;
     }
     .parent {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
     }
     .div1 {
         grid-area: 1 / 1 / 2 / 2;
@@ -1063,7 +1076,314 @@ footer h4 {
     }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 400px) and (max-width: 540px) {
+    .icon-main {
+        padding: 0;
+    }
+    .icon-main span {
+        padding-left: 0 rem;
+        font-size: 1.5rem;
+    }
+    .icon-main img {
+        height: 3.5rem;
+    }
+
+    .link-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-grow: 0.5;
+    }
+    nav ul {
+        position: fixed;
+        background: var(--first--color);
+        top: 4.5rem;
+        right: -100%;
+        text-align: center;
+        transition: all 1.5s;
+        z-index: 10;
+        border-radius: 0 0 0 1rem;
+    }
+
+    .link-container li {
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin: 50px 100px 50px 100px;
+        line-height: 25px;
+    }
+    .link-container li a {
+        font-size: 1.1rem;
+    }
+    .show-menu {
+        right: 0;
+    }
+    .no-move {
+        overflow: hidden;
+    }
+    .menu-burger {
+        display: block;
+    }
+    .parent div i {
+        font-size: 2.5rem;
+    }
+    .parent div h2 {
+        font-size: 1.4rem;
+        padding: 0 0.8rem 0.1rem 0.8rem;
+    }
+    .slider-container a {
+        font-size: 1.1rem;
+    }
+    .slider-container span {
+        font-size: 2.1rem;
+    }
+    .slider-container p {
+        font-size: 1.5rem;
+    }
+    .slider-container p span {
+        font-size: 1.6rem;
+    }
+    .fixed-content {
+        padding-top: 2rem;
+        padding-bottom: 6.5rem;
+    }
+    .valores-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .valores-title-container {
+        padding: 1rem;
+    }
+    .valores-container p {
+        padding: 0;
+        font-size: 1rem;
+    }
+    #fixed_cantidad {
+        font-size: 1.7rem;
+    }
+    .fixed-counter span {
+        font-size: 1.7rem;
+    }
+    .fixed h2 {
+        font-size: 1.8rem;
+    }
+    .fixed h3 {
+        font-size: 1.6rem;
+        padding: 0.8rem;
+        text-align: center;
+    }
+    .fixed p {
+        font-size: 1.3rem;
+    }
+    .title-grid h1 {
+        font-size: 1.8rem;
+    }
+    .title-grid {
+        padding: 0px;
+        height: 70px;
+    }
+    .parent {
+        padding: 0.8rem;
+    }
+    .parent div {
+        padding: 0.5rem 0rem 0rem 0rem;
+        border-radius: 3rem;
+    }
+    .parent div i {
+        font-size: 2.4rem;
+        padding: 1rem;
+    }
+    .parent div h2 {
+        font-size: 1.5rem;
+        padding: 0.4rem;
+    }
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 6px;
+        grid-row-gap: 6px;
+    }
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .div3 {
+        grid-area: 2 / 1 / 3 / 2;
+        background-color: #dbc39a;
+    }
+    .div4 {
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: #dbc39a;
+    }
+    .div5 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .div6 {
+        grid-area: 3 / 2 / 4 / 3;
+        background-color: #a98467;
+    }
+    .div7 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+    .div8 {
+        grid-area: 4 / 2 / 5 / 3;
+    }
+    .parent div p {
+        display: none;
+    }
+    .contador-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem;
+        margin: 0.4rem;
+        border-radius: 2rem;
+    }
+    .contador-span {
+        font-size: 2.5rem;
+    }
+    .contador-item-container h2 {
+        font-size: 1.7rem;
+    }
+    #contador_cantidad {
+        font-size: 2.5rem;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .swiper {
+        height: 40vh;
+    }
+    .text-slider {
+        padding-top: 9rem;
+    }
+    .slider-container span {
+        font-size: 2.8rem;
+    }
+    .slider-container p {
+        font-size: 1.6rem;
+    }
+    .slider-container p span {
+        font-size: 1.7rem;
+    }
+    .slider-container a {
+        font-size: 1.1rem;
+    }
+    .valores-title-container {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    .valores-atributes-container {
+        padding-top: 0.6rem;
+    }
+    .valores-icon-container {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+    .valores-icon-container i {
+        font-size: 25px;
+        padding: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+    .valores-title {
+        max-height: 130px;
+        max-width: 250px;
+    }
+    .valores-title img {
+        height: 160px;
+        width: 160px;
+    }
+    .engordar {
+        padding: 0.7rem 1rem !important;
+    }
+    .valores-container h4 {
+        font-size: 1rem;
+        margin-bottom: 4px;
+        font-weight: 700;
+    }
+    .valores-container p {
+        font-size: 0.8rem;
+        padding-right: 0.8rem;
+        font-weight: 400;
+    }
+    .fixed p {
+        font-size: 1.5rem;
+    }
+    .fixed h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    #fixed_cantidad {
+        font-size: 1.8rem;
+    }
+    .fixed-counter span {
+        font-size: 2rem;
+    }
+    .fixed h3 {
+        font-size: 1.6rem;
+    }
+    .title-grid {
+        padding: 1rem 0rem 0rem 0rem;
+        height: 55px;
+    }
+    .title-grid h1 {
+        font-size: 2rem;
+    }
+    .parent {
+        padding: 0.5rem;
+    }
+    .contador-container {
+        margin: 0.5rem 1rem 2rem 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+    .contador-span {
+        font-size: 2.3rem;
+        padding-right: 0.5rem;
+    }
+    .contador-item-container h2 {
+        font-size: 1.3rem;
+        padding: 0rem 0.3rem 0rem 0.3rem;
+    }
+    #contador_cantidad {
+        font-size: 2.3rem;
+        padding-right: 0.1rem;
+    }
+    .parent {
+        height: 640px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .parent div {
+        border-radius: 3rem;
+        padding: 0.5rem;
+    }
+    .parent div i {
+        font-size: 1.5rem;
+        padding: 0.6rem;
+    }
+    .parent div h2 {
+        font-size: 1rem;
+        padding: 0rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+    .parent div p {
+        font-size: 0.85rem;
+    }
+    @media (min-width: 1000px) {
+        .swiper {
+            height: 75vh;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -1074,7 +1394,6 @@ footer h4 {
 
 @media (min-width: 1200px) {
     .link-container li a {
-        width: 14rem;
         font-size: 1.5rem;
     }
     .tools {
