@@ -12,7 +12,7 @@ let swiper = new Swiper(".mySwiper", {
 
 addEventListener("DOMContentLoaded", () => {
     const contadores = document.querySelectorAll(".contador-cantidad");
-    const velocidad = 400;
+    const velocidad = 300;
     const animarContadores = () => {
         for (const contador of contadores) {
             const actualizar_contador = () => {
@@ -74,6 +74,7 @@ let burger_nav = () => {
             menu.classList.toggle(`toggle`);
         });
     });
+
     function val() {
         if (ul.classList.contains("show-menu")) {
             ul.classList.remove("show-menu");
