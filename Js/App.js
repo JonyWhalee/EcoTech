@@ -86,3 +86,7 @@ let burger_nav = () => {
     }
 };
 burger_nav();
+AOS.init({
+    offset: 200,
+    duration: 600,
+});

@@ -18,7 +18,6 @@
     --fondo: #f0ead2;
 }
 
-
 /*Base*/
 
 *::before,
@@ -41,7 +40,13 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: -webkit-gradient( linear, left top, left bottom, from(transparent), to(#051d2b));
+    background: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from(transparent),
+        to(#051d2b)
+    );
     background: linear-gradient(transparent, var(--first--color));
     border-radius: 40px;
 }
@@ -50,7 +55,6 @@ body {
     background-color: #f2f2fc;
     font-family: "Roboto";
 }
-
 
 /*HEADER STYLES*/
 
@@ -150,7 +154,6 @@ body {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
 
 /*SLIDER STYLES*/
 
@@ -268,7 +271,6 @@ body {
     font-weight: 900;
 }
 
-
 /*Values*/
 
 .valores-container {
@@ -349,7 +351,6 @@ body {
     width: 200px;
 }
 
-
 /*CONTADOR STYLES*/
 
 @keyframes aparecer {
@@ -416,7 +417,6 @@ body {
     padding-right: 0.6rem;
     color: var(--first--color);
 }
-
 
 /* Background fixed */
 
@@ -573,7 +573,6 @@ button:hover .button-text {
     color: #fff;
 }
 
-
 /* Grids cards */
 
 .title-grid {
@@ -648,7 +647,6 @@ button:hover .button-text {
     background-color: var(--first--color);
 }
 
-
 /* .div3 p {
     margin-bottom: rem;
 } */
@@ -687,12 +685,10 @@ button:hover .button-text {
     color: #fff;
 }
 
-
 /*Footer*/
 
 footer {
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer p {
@@ -711,7 +707,6 @@ footer h4 {
 }
 
 .segment-one h4 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     color: #6c584c;
     letter-spacing: 3px;
@@ -728,7 +723,6 @@ footer h4 {
 }
 
 .segment-one p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
@@ -801,6 +795,8 @@ footer h4 {
     cursor: pointer;
     font-size: 16px;
     transition: all 1s;
+    display: flex;
+    justify-content: left;
 }
 
 .twitter i:hover {
@@ -866,7 +862,6 @@ footer h4 {
     font-size: 12px;
 }
 
-
 /* btn whtsp */
 
 .whatsapp {
@@ -900,7 +895,6 @@ footer h4 {
     transform: scale(1.1);
     transition: all 1s;
 }
-
 
 /* Medias queries */
 
@@ -1422,9 +1416,11 @@ footer h4 {
     }
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
-@media (min-width: 1024) {}
+@media (min-width: 1024) {
+}
 
 @media (min-width: 1200px) {
     .link-container li a {
