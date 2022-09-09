@@ -69,7 +69,9 @@ function val() {
         ul.classList.add("show-menu");
         body.classList.add("no-move");
     }
-}
+
+};
+
 burger_nav();
 AOS.init({
     offset: 200,
