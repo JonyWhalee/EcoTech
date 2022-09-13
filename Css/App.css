@@ -12,7 +12,7 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
-    --first--color: #adc178;
+    --first--color: #457b9d;
     --fist--color-dark: #09944a;
     --second--color: #0d31a7;
     --fondo: #f0ead2;
@@ -47,7 +47,7 @@ html {
 }
 
 body {
-    background-color: #f2f2fc;
+    background-color: #fff;
     font-family: "Roboto";
 }
 
@@ -105,7 +105,7 @@ body {
 
 .link-container li a {
     text-decoration: none;
-    color: var(--text-black-900);
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 700;
     transition: all 0.3s;
@@ -685,6 +685,484 @@ button:hover .button-text {
 
 .parent div h2 {
     color: #fff;
+}
+
+
+/*SHOP PAGE*/
+
+
+/*VENTAJAS PROUDCT*/
+
+.ventajas-product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.ventajas-product-container h2 {
+    color: var(--first--color);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.ventajas-product-container p {
+    font-size: 1rem;
+    color: #000;
+    padding: 0.3rem 1rem 1rem 0.3rem;
+    font-weight: 500;
+}
+
+.section-container {
+    padding: 6rem;
+}
+
+.ventajas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ventajas-container h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.ventajas-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ventajas-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ventajas-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 450px;
+    margin: 1rem;
+}
+
+.ventajas-item-container img {
+    height: 70px;
+    width: auto;
+    padding: 0.7rem;
+    border-radius: 1rem;
+}
+
+.valores-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valores-item-text h4 {
+    color: #457b9d;
+    font-weight: 700;
+}
+
+.valores-item-text p {
+    color: #000;
+    padding: 0.1rem 0.8rem 0rem 0.8rem;
+    text-align: justify;
+}
+
+
+/*Termotanque Styles*/
+
+.termotanques-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 4rem;
+}
+
+.termotanques-container h3 {
+    color: var(--first--color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.termotanque-img-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1rem;
+}
+
+.termotanque-img-container img {
+    height: 400px;
+    width: 700px;
+    filter: brightness(0.7);
+    border-radius: 4rem;
+}
+
+.termotanque-text h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.termotanque-text p {
+    color: var(--text-black-700);
+    text-align: justify;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    font-weight: 600;
+}
+
+.termotanque-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+/*Piletas Styles*/
+
+.piletas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 4rem;
+}
+
+.piletas-container h3 {
+    color: var(--first--color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.piletas-img-container {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.piletas-img-container img {
+    height: 400px;
+    width: 300px;
+    filter: brightness(0.7);
+    border-radius: 4rem;
+}
+
+.pileta-text h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--text-black-900);
+    padding-bottom: 1rem;
+}
+
+.pileta-text p {
+    color: var(--text-black-700);
+    text-align: justify;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+    font-weight: 600;
+}
+
+.pileta-text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+/*ESTUFAS*/
+
+.estufas-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.estufas-section-title h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #457b9d;
+}
+
+.estufas-ventajas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem 1rem 3rem
+}
+
+.estufas-ventajas-container h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+}
+
+.estufas-ventajas-container ul li {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 0.5rem;
+    list-style: none;
+}
+
+.estufas-items-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.estufas-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 2rem 1.5rem 2rem;
+    padding: 1rem;
+}
+
+.estufas-item-container img {
+    height: 200px;
+    width: auto;
+}
+
+.estufas-item-container h3 {
+    color: var(--first--color);
+    padding-top: 1rem;
+    font-weight: 800;
+}
+
+.estufas-info-container ul {
+    list-style: none;
+}
+
+.estufas-info-container ul div {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-bottom: 3px;
+    justify-content: flex-start;
+}
+
+.estufas-info-container ul div li {
+    font-weight: 600;
+}
+
+.estufas-info-container ul div p {
+    color: var(--text-black-900);
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+/*Sistema Fotovoltaico*/
+
+.fixed-fotovoltaico {
+    width: 100%;
+    background-image: url("../Img/38.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fixed-content-fotovoltaico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 400px;
+}
+
+.fixed-content-fotovoltaico h2 a {
+    color: #fff;
+    font-size: 2.7rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.ongrid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem 1rem 4rem;
+}
+
+.ongrid-container h3 {
+    color: var(--first--color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.ongrid-container p {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: justify;
+    padding: 1rem 5rem 0rem 5rem;
+}
+
+.offgird-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem 8rem 10rem 8rem;
+}
+
+.offgird-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offgird-container div h3 {
+    color: var(--first--color);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.offgird-container div p {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.offgird-container img {
+    height: 200px;
+    width: 300px;
+    border-radius: 2rem;
+    margin-left: 2rem;
+}
+
+
+/*Sistema fotovoltaico dedicado*/
+
+.section-foto-dedicado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-foto-dedicado h2 {
+    color: var(--first--color);
+    font-weight: 700;
+    font-size: 2.3rem
+}
+
+.Foto-text {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: justify;
+    padding: 2rem 6rem 1rem 6rem;
+}
+
+.aplique-solar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aplique-solar-container h3 {
+    font-size: 2rem;
+    color: var(--first--color);
+    font-weight: 500;
+}
+
+.aplique-solar-list-1 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+}
+
+.list-1-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-1-container img {
+    height: 80px;
+}
+
+.list-1-title {
+    color: var(--first--color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.margin-cont {
+    margin: 0rem 6rem 0rem 6rem;
+}
+
+.list-1-product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-1-product-info div h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.list-1-product-info div p {
+    color: #000;
+    text-align: left;
+    margin-bottom: 0.3rem;
+}
+
+.list-2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-2-container img {
+    height: 120px;
+}
+
+.list-2-container span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.list-2-title {
+    color: var(--first--color);
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.list-2-product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.list-2-product-info div h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.list-2-product-info div p {
+    color: #000;
+    text-align: left;
+    margin-bottom: 0.3rem;
 }
 
 
