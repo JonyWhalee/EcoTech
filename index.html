@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="Img/4.png" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./Css/App.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./Css/App.css" />
+    <script defer src="Js/App.js"></script>
     <title>EcoTech | Incio</title>
 </head>
 
@@ -34,7 +34,7 @@
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#">Productos</a></li>
                         <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Sobre Nosostros</a></li>
+                        <li><a href="index.html#about">Sobre Nosostros</a></li>
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
@@ -42,210 +42,209 @@
         </div>
         </div>
     </header>
-    <!-- Slider -->
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide slider-1">
-                <div class="slider-container">
-                    <span class="text-slider">CREA TU ENERGÍA</span>
-                    <p>Equipos de energias renovables <span>(Solar/Eólica)</span></p>
-                    <a class="btn-verse" href="">Productos</a>
-                </div>
-            </div>
-            <div class="swiper-slide slider-2">
-                <div class="slider-container">
-                    <span class="text-slider">ASESORAMIENTO E INSTALACIÓN</span>
-                    <p>Más de 10 años de experiencia en instalaciones</p>
-                    <a class="btn-verse" href="">Servicios</a>
-                </div>
-            </div>
-            <div class="swiper-slide slider-3">
-                <div class="slider-container">
-                    <span class="text-slider">CONSULTA TU PRESUPUESTO</span>
-                    <p> Elegí los productos que mas se ajusten a tu presupuesto</p>
-                    <a class="btn-verse" href="">Contacto</a>
+    <main>
+        <!-- Slider -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-1">
+                        <div class="slider-container">
+                            <span class="text-slider">CREA TU ENERGÍA</span>
+                            <p>Equipos de energias renovables <span>(Solar/Eólica)</span></p>
+                            <a class="btn-verse" href="">Productos</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-2">
+                        <div class="slider-container">
+                            <span class="text-slider">ASESORAMIENTO E INSTALACIÓN</span>
+                            <p>Más de 10 años de experiencia en instalaciones</p>
+                            <a class="btn-verse" href="">Servicios</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slider-3">
+                        <div class="slider-container">
+                            <span class="text-slider">CONSULTA TU PRESUPUESTO</span>
+                            <p> Elegí los productos que mas se ajusten a tu presupuesto</p>
+                            <a class="btn-verse" href="">Contacto</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <hr>
+        <!-- Cards -->
+        <section class="valores-container">
+            <div class="valores-title-container">
+                <div class="valores-title">
+                    <img src="Img/icon-main-ecotech.jpg" alt="">
+                </div>
+                <div>
+                    <p class="valores-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aut nam, molestias ipsam voluptatum possimus facilis modi, enim assumenda natus inventore deleniti iste maiores distinctio officiis? Atque, magnam autem.</p>
+                </div>
+            </div>
+            <div class="valores-atributes-container">
+                <div class="valores-icon-container">
+                    <i class="fa-solid fa-chart-column"></i>
+                    
+                    <h4>PRECIO</h4>
+                    <p>Los mejores precios del mercado</p>
+                </div>
+                <div class="valores-icon-container">
+                    <i class="engordar fa-solid fa-award"></i>
+                    <h4>CALIDAD</h4>
+                    <p>Las mejores marcas del sector con la máxima garantía.
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="valores-atributes-container">
+                <div class="valores-icon-container">
+                    <i class="fa-solid fa-comments"></i>
+                    
+                    <h4>CONSULTORÍA</h4>
+                    <p>Asesoramiento en materia de normativa y subvencione</p>
+                    
+                </div>
+                <div class="valores-icon-container tools">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h4>INSTALACIÓN</h4>
+                    <p>Ofrecemos servicio de instalación y medición de necesidades energéticas.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Grids cards -->
+        <article class="title-grid">
+            <h1>¿Por qué EcoTech?</h1>
+        </article>
+        <div class="parent">
+            <div class="div1" data-aos="fade-right">
+                <i class="fa-solid fa-square-check"></i>
+                <h2>Calidad</h2>
+                <p>
+                    accusamus doloremque, libero optio et voluptatibus eaque labore totam tempore fugit neque?</p>
+                </div>
+                <div class="div2" data-aos="fade-left">
+                    <i class="fa-solid fa-users-between-lines"></i>
+                    <h2>Comunidad</h2>
+                    <p>fuga officia numquam minus nisi expedita. Enim placeat laboriosam odio consequatur nihil hic atque?</p>
+                </div>
+                <div class="div3" data-aos="fade-up">
+                    <i class="fa-solid fa-gears"></i>
+                    <h2>Servicio técnico</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam exercitationem debitis, eum sequi, magni harum, fuga officia numquam minus nisi expedita. Enim placeat laboriosam odio consequatur nihil hic atque?</p>
+                </div>
+                <div class="div4" data-aos="fade-up">
+                    <i class="fa-solid fa-people-group"></i>
+                    <h2>Estructura</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque culpa blanditiis quod, architecto, quidem odit voluptatibus quam deleniti libero perferendis molestiae odio alias. Repudiandae tempora aut culpa exercitationem suscipit quos!</p>
+                </div>
+                <div class="div5" data-aos="fade-up">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <h2>Innovación</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quam dolorem eaque eius omnis quibusdam voluptatem odio! Odio eum rem iste minus, commodi tenetur, obcaecati eos fugit blanditiis ullam fugiat?</p>
+                </div>
+                <div class="div6" data-aos="fade-right">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h2>Certificaciones</h2>
+                    <p>in ad ducimus! Veniam accusantium quidem sint laborum, nostrum repudiandae eligendi commodi?</p>
+                </div>
+                <div class="div7" data-aos="fade-left">
+                    <i class="fa-solid fa-industry"></i>
+                    <h2>Fabricación propia</h2>
+                    <p> odio esse aperiam autem placeat culpa hic! Iure voluptatum ab facere provident, mollitia unde voluptates minima dolores.</p>
+                </div>
+                <div class="div8" data-aos="fade-up">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <h2>Alcance nacional</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequatur quibusdam aut mollitia culpa vel ea incidunt saepe sed autem ex, velit, fugiat, hic quae dicta nostrum nisi blanditiis. Perspiciatis?</p>
+                </div>
+            </div>
+        
+        <!-- backgroound fixed -->
+        <div class="fixed">
+            <div class="fixed-content">
+                <h2><a href="index.html#"> Cuidamos el planeta</a></h2>
+                <div class="fixed-container">
+                    <div class="fixed-counter contador">
+                        <span>+</span>
+                        <div class="contador-cantidad" data-cantidad-total="10000" id="fixed_cantidad"></div>
+                    </div>
+                    <h3>Toneladas de CO2 evitadas</h3>
+                </div>
+                <p>Ayudanos a seguir haciendolo</p>
+                <a href="#">
+                    <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Ver más</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!--Contador-->
+        <section class="contador-container" data-aos="fade-up">
+            <div class="contador ocultar contador-item-container">
+                <div class="contador-number-container">
+                    <span class="contador-span">+</span>
+                    <div class="contador-cantidad" data-cantidad-total="2000" id="contador_cantidad"></div>
+                </div>
+                <h2>Proyectos finalizados</h2>
+            </div>
+            <div class="contador ocultar contador-item-container">
+                <div class="contador-number-container">
+                    <span class="contador-span">+</span>
+                    <div class="contador-cantidad" data-cantidad-total="5000" id="contador_cantidad"></div>
+                </div>
+                <h2>Toneladas de CO2 evitadas</h2>
+            </div>
+            <div class="contador ocultar contador-item-container">
+                <div class="contador-number-container">
+                    <span class="contador-span">+</span>
+                    <div class="contador-cantidad" data-cantidad-total="18" id="contador_cantidad"></div>
+                </div>
+                <h2>Años de experiencia</h2>
+            </div>
+            <div class="contador ocultar contador-item-container">
+                <div class="contador-number-container">
+                    <span class="contador-span">+</span>
+                    <div class="contador-cantidad" data-cantidad-total="10000" id="contador_cantidad"></div>
+                </div>
+                <h2>Kw instalados</h2>
+            </div>
+        </section>
+        <!-- flips Cards  -->
     </main>
-    <!-- Cards -->
-    <section class="valores-container">
-        <div class="valores-title-container">
-            <div class="valores-title">
-                <img src="Img/icon-main-ecotech.jpg" alt="">
-            </div>
-            <div>
-                <p class="valores-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellendus aut nam, molestias ipsam voluptatum possimus facilis modi, enim assumenda natus inventore deleniti iste maiores distinctio officiis? Atque, magnam autem.</p>
-            </div>
-        </div>
-        <div class="valores-atributes-container">
-            <div class="valores-icon-container">
-                <i class="fa-solid fa-chart-column"></i>
 
-                <h4>PRECIO</h4>
-                <p>Los mejores precios del mercado</p>
-            </div>
-            <div class="valores-icon-container">
-                <i class="engordar fa-solid fa-award"></i>
-                <h4>CALIDAD</h4>
-                <p>Las mejores marcas del sector con la máxima garantía.
-                </p>
-
-            </div>
-        </div>
-        <div class="valores-atributes-container">
-            <div class="valores-icon-container">
-                <i class="fa-solid fa-comments"></i>
-
-                <h4>CONSULTORÍA</h4>
-                <p>Asesoramiento en materia de normativa y subvencione</p>
-
-            </div>
-            <div class="valores-icon-container tools">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <h4>INSTALACIÓN</h4>
-                <p>Ofrecemos servicio de instalación y medición de necesidades energéticas.
-                </p>
-            </div>
-        </div>
-    </section>
-    <!-- backgroound fixed -->
-    <div class="fixed">
-        <div class="fixed-content">
-            <h2><a href="index.html#"> Cuidamos el planeta</a></h2>
-            <div class="fixed-container">
-                <div class="fixed-counter contador">
-                    <span>+</span>
-                    <div class="contador-cantidad" data-cantidad-total="10000" id="fixed_cantidad"></div>
-                </div>
-                <h3>Toneladas de CO2 evitadas</h3>
-            </div>
-            <p>Ayudanos a seguir haciendolo</p>
-            <a href="#">
-                <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">Ver más</span>
-                </button>
-            </a>
-        </div>
-    </div>
-    <br>
-    <!-- Grids cards -->
-    <article class="title-grid">
-        <h1>¿Por qué EcoTech?</h1>
-    </article>
-    <div class="parent">
-        <div class="div1" data-aos="fade-up">
-            <i class="fa-solid fa-square-check"></i>
-            <h2>Calidad</h2>
-            <p>
-                accusamus doloremque, libero optio et voluptatibus eaque labore totam tempore fugit neque?</p>
-        </div>
-        <div class="div2" data-aos="fade-up">
-            <i class="fa-solid fa-users-between-lines"></i>
-            <h2>Comunidad</h2>
-            <p>fuga officia numquam minus nisi expedita. Enim placeat laboriosam odio consequatur nihil hic atque?</p>
-        </div>
-        <div class="div3" data-aos="fade-up">
-            <i class="fa-solid fa-gears"></i>
-            <h2>Servicio técnico</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam exercitationem debitis, eum sequi, magni harum, fuga officia numquam minus nisi expedita. Enim placeat laboriosam odio consequatur nihil hic atque?</p>
-        </div>
-        <div class="div4" data-aos="fade-up">
-            <i class="fa-solid fa-people-group"></i>
-            <h2>Estructura</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque culpa blanditiis quod, architecto, quidem odit voluptatibus quam deleniti libero perferendis molestiae odio alias. Repudiandae tempora aut culpa exercitationem suscipit quos!</p>
-        </div>
-        <div class="div5" data-aos="fade-up">
-            <i class="fa-regular fa-lightbulb"></i>
-            <h2>Innovación</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quam dolorem eaque eius omnis quibusdam voluptatem odio! Odio eum rem iste minus, commodi tenetur, obcaecati eos fugit blanditiis ullam fugiat?</p>
-        </div>
-        <div class="div6" data-aos="fade-up">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <h2>Certificaciones</h2>
-            <p>in ad ducimus! Veniam accusantium quidem sint laborum, nostrum repudiandae eligendi commodi?</p>
-        </div>
-        <div class="div7" data-aos="fade-up">
-            <i class="fa-solid fa-industry"></i>
-            <h2>Fabricación propia</h2>
-            <p> odio esse aperiam autem placeat culpa hic! Iure voluptatum ab facere provident, mollitia unde voluptates minima dolores.</p>
-        </div>
-        <div class="div8" data-aos="fade-up">
-            <i class="fa-solid fa-map-location-dot"></i>
-            <h2>Alcance nacional</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequatur quibusdam aut mollitia culpa vel ea incidunt saepe sed autem ex, velit, fugiat, hic quae dicta nostrum nisi blanditiis. Perspiciatis?</p>
-        </div>
-    </div>
-    <!--Contador-->
-    <section class="contador-container" data-aos="fade-up">
-        <div class="contador ocultar contador-item-container">
-            <div class="contador-number-container">
-                <span class="contador-span">+</span>
-                <div class="contador-cantidad" data-cantidad-total="2000" id="contador_cantidad"></div>
-            </div>
-            <h2>Proyectos finalizados</h2>
-        </div>
-        <div class="contador ocultar contador-item-container">
-            <div class="contador-number-container">
-                <span class="contador-span">+</span>
-                <div class="contador-cantidad" data-cantidad-total="5000" id="contador_cantidad"></div>
-            </div>
-            <h2>Toneladas de CO2 evitadas</h2>
-        </div>
-        <div class="contador ocultar contador-item-container">
-            <div class="contador-number-container">
-                <span class="contador-span">+</span>
-                <div class="contador-cantidad" data-cantidad-total="18" id="contador_cantidad"></div>
-            </div>
-            <h2>Años de experiencia</h2>
-        </div>
-        <div class="contador ocultar contador-item-container">
-            <div class="contador-number-container">
-                <span class="contador-span">+</span>
-                <div class="contador-cantidad" data-cantidad-total="10000" id="contador_cantidad"></div>
-            </div>
-            <h2>Kw instalados</h2>
-        </div>
-    </section>
-
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
-    <!-- flips Cards  -->
-
-    <footer id="redes">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
-                        <h4>EcoTech</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At perspiciatis fuga voluptate placeat ea non dolor ullam debitis accusantium minima quidem pariatur, atque saepe eius aliquid odit perferendis sit quasi deserunt. Sit quaerat
-                            quo nemo li</p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
-                        <h4>Nosotros</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem voluptatibus culpa vitae exercitationem asperiores. Voluptatibus id sapiente, iste consequuntur cumque atque deleniti dolores modi, error quisquam neque
-                            magni.
-                        </p>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
-                        <h4>Redes</h4>
-                        <a class="instagram" href="https://www.instagram.com/" target="blank_"><i class=" fab fa-instagram"></i></a>
-                        <a class="facebook" href="https://www.facebook.com/" target="blank_"><i class="fab fa-facebook"></i></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
-                        <h4>Contacto</h4>
-                        <p>
-                            <i class="fas fa-home mr-3"></i>Calle false 1234567 </p>
-                        <p>
-                            <i class="fas fa-envelope mr-3"></i>EcoTech@gmail.com
+        <footer id="about">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12 segment-one">
+                            <h4>EcoTech</h4>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At perspiciatis fuga voluptate placeat ea non dolor ullam debitis accusantium minima quidem pariatur, atque saepe eius aliquid odit perferendis sit quasi deserunt. Sit quaerat
+                                quo nemo li</p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 segment-two">
+                                <h4>Nosotros</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem voluptatibus culpa vitae exercitationem asperiores. Voluptatibus id sapiente, iste consequuntur cumque atque deleniti dolores modi, error quisquam neque
+                                    magni.
+                                </p>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 segment-three">
+                                <h4>Redes</h4>
+                                <a class="instagram" href="https://www.instagram.com/eco.tech.vm/" target="blank_"><i class=" fab fa-instagram"></i></a>
+                                <a class="facebook" href="https://www.facebook.com/Eco.Tech.VM" target="blank_"><i class="fab fa-facebook"></i></a>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 segment-four">
+                                <h4>Contacto</h4>
+                                <p>
+                                    <i class="fas fa-home mr-3"></i>Belgica 2426, Villa Mercedes</p>
+                                    <p>
+                                        <i class="fas fa-envelope mr-3"></i>eco.tech.vm@gmail.com
                         </p>
                         <p>
-                            <i class="fas fa-phone mr-3"></i>1112345679
-
-
+                            <i class="fas fa-phone mr-3"></i>+54 2657 243998
                         </p>
                     </div>
                 </div>
@@ -253,20 +252,14 @@
         </div>
         <p class="footer-bottom-text">COPYRIGHT &copy; EcoTech 2022 | Diseño y desarrollo</p>
         <!-- Whatsapp -->
-        <a href="https://wa.me/5491140885219?text=Hola%20Buenas!%20Vengo%20desde%20el%20sitio%20de%20EcoTech,%20y%20me%20gustaría%20hablar%20contigo%20:)" class="whatsapp" target="_blank">
+        <a href="https://wa.me/5492657243998?text=Hola%20Buenas!%20Vengo%20desde%20el%20sitio%20de%20EcoTech,%20y%20me%20gustaría%20hablar%20contigo%20:)" class="whatsapp" target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
+    
     <script src="https://kit.fontawesome.com/75849575e5.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="Js/App.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            offset: 50,
-            duration: 600
-        });
-    </script>
 </body>
 
 </html>
